@@ -12,36 +12,90 @@
 
   <body>
     <div class="container">
-      <div class="row"></div>
+      <!--Set the navigation bar-->
+      <div class="row">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="https://sereneys.github.io/Web-Design-Challenge/">Latitude</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
-            <ul class="nav justify-content-end">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Plots
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Max Temperature</a>
-                  <a class="dropdown-item" href="#">Humidity</a>
-                  <a class="dropdown-item" href="#">Cloudiness</a>
-                  <a class="dropdown-item" href="#">Wind Speed</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Comparison</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Data</a>
-              </li>
-            </ul>
+            <a type="button" class="btn btn-info" href="https://sereneys.github.io/Web-Design-Challenge/">
+              Latitude
+            </a>
+            
+            <div class="nav collapse navbar-collapse" id="navbarSupportedContent" >
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="https://sereneys.github.io/Web-Design-Challenge/">Max Temperature</a>
+                    <a class="dropdown-item" href="https://sereneys.github.io/Web-Design-Challenge/">Humidity</a>
+                    <a class="dropdown-item" href="https://sereneys.github.io/Web-Design-Challenge/">Cloudiness</a>
+                    <a class="dropdown-item" href="https://sereneys.github.io/Web-Design-Challenge/">Wind Speed</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://sereneys.github.io/Web-Design-Challenge/comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Data</a>
+                </li>
+              </ul>
           </div>
         </nav>
       </div>
+
+      <div class="row justify-content-center" style="background-color:lightgrey">
+        <div class="col-md-6" style="background-color:white; margin-left:2%; margin-top:2%; margin-bottom:8%; margin-right:2%">
+          <h1 style="font-size:30px; color: lightseagreen; margin-top: 8%; margin-bottom:5%">Summary: Latitude vs. X</h1>
+          <hr>
+          <img src="Resources/assets/images/fig1.png" alt="City Latitude vs. Max Temp" style="float:left; width:50%; padding:10px">
+          <p style="font-size:14px; color:grey">
+            The purpose of this project was to analyze how weather changes as you get closer to the equator. 
+            To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+             <br>
+            <br>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. 
+            Factors we looked at included: temperature, cloudiness, wind speed, and humidity.               This site provides the source data and visualization created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+          </p>
+        </div>
+
+        <div class="col-md-4" style="background-color:white; margin-left:2%; margin-top:2%; margin-bottom:8%; margin-right:2%">
+          <h1 style="font-size:30px; color:lightseagreen;margin-top: 8%; margin-bottom:5%">Visualizations</h1>
+          <hr>
+          <div>
+            <img src="Resources/assets/images/fig1.png" alt="City Latitude vs. Max Temp" style="float:left; width:50%; padding:5px">
+            <img src="Resources/assets/images/fig2.png" alt="City Latitude vs. Humidity" style="float:left; width:50%; padding:5px">
+            <br>
+            <img src="Resources/assets/images/fig3.png" alt="City Latitude vs. Cloudiness" style="float:left; width:50%; padding:5px">
+            <img src="Resources/assets/images/fig4.png" alt="City Latitude vs. Wind Speed" style="float:left; width:50%; padding:5px"> 
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center" style="position:fixed;background-color:darkgrey; border: top width 5px; border-top:darkcyan">
+        <div class="col-lg-12"></div>
+          <p style="color:white; width:100%">@Copyright Coding Bootcamp 2020</p>
+
+
+        </div>
+
+
+      </div>
+
+        
+
+
+
+
+
+
+
+
     </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 
 </html>
