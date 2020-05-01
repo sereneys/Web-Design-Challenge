@@ -3,9 +3,89 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Comparison</title>
+    <title>Visualization Dashboard</title>
 
     <!-- Bring in bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
   </head>
+
+  <body>
+    <nav class="navbar navbar-expand navbar-light bg-white">
+      <!--Set the navigation bar-->
+      <div class="navbar-header">
+        <a type="button" class="btn btn-info" style="margin-left:20px" href="https://sereneys.github.io/Web-Design-Challenge/">
+          Latitude
+        </a>
+      </div>
+      <div class="navbar-collapse collapse ">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://sereneys.github.io/Web-Design-Challenge/visual_temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="https://sereneys.github.io/Web-Design-Challenge/visual_humidity.html">Humidity</a>
+              <a class="dropdown-item" href="https://sereneys.github.io/Web-Design-Challenge/visual_cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="https://sereneys.github.io/Web-Design-Challenge/visual_wind_speed.html">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://sereneys.github.io/Web-Design-Challenge/comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://sereneys.github.io/Web-Design-Challenge/data.html">Data</a>
+          </li>
+        </ul>              
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center" style="background-color:lightgrey">
+        <div class="col-md-6" style="text-align:center; width:100%; background-color:white; margin-left:2%; margin-right:2%; margin-top:5%; margin-bottom:5%">
+          <h1 style="font-size:30px; color: lightseagreen; margin-top: 4%; margin-bottom:5%">Max Temperature</h1>
+          <hr>
+          <img src="https://github.com/sereneys/Web-Design-Challenge/blob/master/Resources/assets/images/Fig1.png?raw=true" alt="City Latitude vs. Max Temp" style="float:none; width:80%; padding:5px">
+          <br>
+          <p style="text-align:left; font-size:14px; color:grey">
+            As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude).
+            More interestingly, however, is the fact that the southern hemispheere tends to be warmer this time of year than the northern hemisphere.
+            This may be due to the tilt of the earth at the time of the year this data was gathered.
+          </p>
+        </div>
+
+        <div class="col-md-4" style="text-align:center; width:100%; background-color:white; margin-left:2%; margin-top:5%; margin-bottom:20%; margin-right:2%">
+          <h1 style="font-size:30px; color:lightseagreen; margin-top: 8%; margin-bottom:5%">Visualizations</h1>
+          <hr>
+          <div>
+            <a class="borders" href="https://sereneys.github.io/Web-Design-Challenge/visual_temp.html">
+              <img src="https://github.com/sereneys/Web-Design-Challenge/blob/master/Resources/assets/images/Fig1.png?raw=true" alt="City Latitude vs. Max Temp" style="border:1px solid lightseagreen; float:left; width:50%; padding:5px">
+            </a>
+            <a href="https://sereneys.github.io/Web-Design-Challenge/visual_humidity.html">
+              <img src="https://github.com/sereneys/Web-Design-Challenge/blob/master/Resources/assets/images/Fig2.png?raw=true" alt="City Latitude vs. Humidity" style="float:none; width:50%; padding:5px">
+            </a>
+            <br>
+            <br>
+            <a href="https://sereneys.github.io/Web-Design-Challenge/visual_cloudiness.html">
+              <img src="https://github.com/sereneys/Web-Design-Challenge/blob/master/Resources/assets/images/Fig3.png?raw=true" alt="City Latitude vs. Cloudiness" style="float:left; width:50%; padding:5px">
+            </a>
+            <a href="https://sereneys.github.io/Web-Design-Challenge/visual_wind_speed.html">
+            <img src="https://github.com/sereneys/Web-Design-Challenge/blob/master/Resources/assets/images/Fig4.png?raw=true" alt="City Latitude vs. Wind Speed" style="float:none; width:50%; padding:5px"> 
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center border-top border-info" style="background-color:darkgrey">
+          <div class="col-md-12" style="width:100%">
+            <p style="color:white; text-align:center;font-size: 12px; padding:10px">@Copyright Coding Bootcamp 2020</p>
+          </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+
+</html>
