@@ -1,0 +1,24 @@
+.sm-nav {
+    display:none
+}
+
+
+@media (max-width: 800px) {
+    .navbar-light{
+        background-color:lightseagreen 
+      
+    }
+
+    .lg-nav {
+        display:none
+    }
+
+    .sm-nav {
+        display:block
+    
+    }
+
+
+
+
+}
